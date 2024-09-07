@@ -395,7 +395,7 @@ img {
   left: 0;
   bottom: -.5rem;
   width: 20px;
-  height: 2pc;
+  height: 2px;
   background-color: var(--text-color);
 }
 
@@ -690,7 +690,7 @@ img {
 }
 
 /* For large devices */
-@media screen and (mind-width: 1150px) {
+@media screen and (min-width: 1150px) {
   .container{
     margin-inline: auto;
   }
