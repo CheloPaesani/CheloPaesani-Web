@@ -1,6 +1,7 @@
 <!DOCTYPE html>
    <html lang="en">
    <head>
+    <link rel="stylesheet" href="assets/css/style.css">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,7 +14,7 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive portfolio website - Bedimcode</title>
+      <title>Responsive portfolio website - Chelo</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -160,7 +161,7 @@
                             My description when i want to put it because right now im too tired to do it.
                         </p>
 
-                        <a href="assets/pdf/CVMarceloPaesani2024.pdf" download="" target="_blank" class="button about__button"></a>
+                        <a href="assets/pdf/CVMarceloPaesani2024.pdf" download="" target="_blank" class="button about__button">Download CV</a>
                     </div>
 
                     <img src="assets/img/home-perfil.png" alt="image" class="about__img">
@@ -168,12 +169,97 @@
 
                 <!-- EXPERIENCE -->
                 <div class="experience">
+                    <h3 class="info__title">Experience</h3>
                     
+                    <div class="experience__content grid">
+                        <div class="experience__data grid">
+                            <h2 class="experience__company">Discord</h2>
+
+                            <div>
+                                <h3 class="experience__profession">Web Product Designer</h3>
+                                <span class="experience__date">03/24 - Present</span>
+                                <p class="experience__description">
+                                    description :DDD
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience__data grid">
+                            <h2 class="experience__company">Google</h2>
+
+                            <div>
+                                <h3 class="experience__profession">Web Developer</h3>
+                                <span class="experience__date">03/24 - Present</span>
+                                <p class="experience__description">
+                                    description :DDD
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience__data grid">
+                            <h2 class="experience__company">Adobe</h2>
+
+                            <div>
+                                <h3 class="experience__profession">Web Designer</h3>
+                                <span class="experience__date">03/24 - Present</span>
+                                <p class="experience__description">
+                                    description :DDD
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- SKILLS -->
                 <div class="skills">
-                    
+                    <h3 class="info__title">Skills</h3>
+
+                    <div class="skills__content grid">
+                        <div class="skills__box">
+                            <img src="assets/img/info-html.svg" alt="image" class="skills__img">
+                            <span class="skills__name">HTML</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="assets/img/info-css.svg" alt="image" class="skills__img">
+                            <span class="skills__name">CSS</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="assets/img/info-javascript.svg" alt="image" class="skills__img">
+                            <span class="skills__name">JavaScript</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="assets/img/info-react.svg" alt="image" class="skills__img">
+                            <span class="skills__name">React</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="assets/img/info-git.svg" alt="image" class="skills__img">
+                            <span class="skills__name">Git</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="assets/img/info-github.svg" alt="image" class="skills__img">
+                            <span class="skills__name">Github</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="assets/img/info-tailwind-css.svg" alt="image" class="skills__img">
+                            <span class="skills__name">Tailwind CSS</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="assets/img/info-sass.svg" alt="image" class="skills__img">
+                            <span class="skills__name">Sass</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="assets/img/info-figma.svg" alt="image" class="skills__img">
+                            <span class="skills__name">Figma</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -186,23 +272,75 @@
 
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
+            <h2 class="section__title">CONTACT ME</h2>
 
+            <div class="contact__container container grid">
+                <form action="" class="contact__form grid" id="contact-form">
+                    <div class="contact__group grid">
+                        <input type="text" name="user_name" placeholder="Names" required class="contact__input">
+                        <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+                    </div>
+
+                    <textarea name="user_message" placeholder="Message" required class="contact__input contact__area"></textarea>
+
+                    <button type="submit" class="button contact__button">Send Message</button>
+
+                    <p class="contact__message" id="contact-message"></p>
+                </form>
+
+                <div class="contact__social grid">
+                    <a href="https://www.facebook.com" target="_blank" class="contact__social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                        <span>facebook</span>
+                    </a>
+
+                    <a href="https://www.instagram.com" target="_blank" class="contact__social-link">
+                        <i class="ri-instagram-line"></i>
+                        <span>instagram</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com" target="_blank" class="contact__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                        <span>Linkedin</span>
+                    </a>
+                </div>
+            </div>
          </section>
       </main>
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
 
+                <li>
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+
+                <li>
+                    <a href="#info" class="footer__link">Info</a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; All Rights Reserved By Chelo
+            </span>
+        </div>
       </footer>
 
       <!--========== SCROLL UP ==========-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
 
       <!--=============== EMAIL JS ===============-->
-      <script src=""></script>
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
