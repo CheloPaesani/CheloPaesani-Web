@@ -722,8 +722,8 @@ img {
   }
 
   .home__container{
-    grid-template-columns: 375px 350px;
-    gap: 3rem 16rem;
+    grid-template-columns: 450px 400px;
+    gap: 4rem 20rem;
   }
 
   .home__img{
@@ -762,7 +762,7 @@ img {
   }
 
   .info__title{
-    font-size: var(--normal-font-size);
+    font-size: var(--h2-font-size);
     margin-bottom: 3.5rem;
   }
 
@@ -805,12 +805,19 @@ img {
     margin-bottom: 1.5rem;
   }
 
+  .skills__img{
+    width: 60px;
+    margin-bottom: .5rem;
+  }
+
   .skills__content{
-    grid-template-columns: repeat(6, max-content);
+    grid-template-columns: repeat(auto, max-content);
+    justify-content: center;
   }
 
   .contact__container{
     grid-template-columns: 580px;
+    justify-content: center;
   }
 
   .contact__group{
@@ -849,93 +856,5 @@ img {
 
   .scrollup{
     right: 3rem;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-    margin-inline: auto;
-  }
-
-  .section {
-    padding-block: 9rem 7rem;
-  }
-
-  .section__title {
-    padding-bottom: 5rem;
-  }
-
-  .nav {
-    height: calc(var(--header-height) + 2.5rem);
-  }
-
-  .nav__list {
-    column-gap: 5rem;
-  }
-
-  .home__container {
-    grid-template-columns: 450px 400px;
-    gap: 4rem 20rem;
-  }
-
-  .home__img {
-    width: 400px;
-  }
-
-  .home__profession::after {
-    width: 40%;
-  }
-
-  .work__container {
-    grid-template-columns: repeat(3, 400px);
-    gap: 3rem;
-  }
-
-  .work__link {
-    padding: 3.5rem 3.5rem 2.5rem;
-  }
-
-  .info__container {
-    row-gap: 5rem;
-  }
-
-  .about {
-    grid-template-columns: 380px 500px;
-    column-gap: 13rem;
-  }
-
-  .about__img {
-    width: 380px;
-  }
-
-  .experience__data {
-    grid-template-columns: 380px 450px;
-    column-gap: 13rem;
-  }
-
-  .skills__content {
-    grid-template-columns: repeat(7, max-content);
-    gap: 2rem;
-  }
-
-  .contact__container {
-    grid-template-columns: 680px;
-  }
-
-  .contact__area {
-    height: 18rem;
-  }
-
-  .contact__social {
-    column-gap: 6rem;
-  }
-
-  .footer__container {
-    padding-block: 4rem;
-  }
-
-  .scrollup {
-    right: 4rem;
   }
 }
